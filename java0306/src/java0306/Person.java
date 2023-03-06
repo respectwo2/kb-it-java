@@ -7,12 +7,30 @@ package java0306;
  */ // java doc 코멘트
 
 public class Person {
-	String name;
-	int age;
+	private String name;
+	private int age;
 
 	public Person() {
-
 	}
+	
+	
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	
 	
 	public Person(String name, int age) { //생성자 메서드가 아니기떄문에 호출안됨 (void = 리턴타입 없애야함)
 		System.out.println("this : "+this);
@@ -26,10 +44,13 @@ public class Person {
 	}
 
 	//메서드 만들때 리턴타입을 적어줘야함
-	void printInfo() {
-		System.out.println(name+"의 나이는 "+age+"세"); //1. 메서드 내부변수를 먼저찾고 없으면 2. 멤버변수를 찾음 -> 없으면 오류남
+//	void printInfo() {
+//		System.out.println(name+"의 나이는 "+age+"세"); //1. 메서드 내부변수를 먼저찾고 없으면 2. 멤버변수를 찾음 -> 없으면 오류남
+//	}
+	
+	public String toString() {
+		return (name+"의 나이는 "+age+"세");
 	}
-		
 	
 
 		
