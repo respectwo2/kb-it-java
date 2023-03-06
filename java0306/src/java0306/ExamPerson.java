@@ -17,7 +17,7 @@ public class ExamPerson {
 		p2.age = 32;
 //		System.out.println(p2.name+"의 나이는 "+p2.age);
 		p2.printInfo();
-		1
+		
 		
 
 		
