@@ -1,3 +1,5 @@
+package 정올;
+
 import java.util.Scanner;
 
 public class J9063_배열1 { //제출시 Main으로 수정
